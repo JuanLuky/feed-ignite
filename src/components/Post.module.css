@@ -1,12 +1,21 @@
 .post {
     display: flex;
     flex-direction: column;
-
+    padding: 2.5rem;
+    background: var(--gray-800);
+    border-radius: 8px;
 }
-.post header {
+.post + .post {
+    margin-top: 2rem;
+}
+.post > header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+.post header time {
+    font-size: 0.85rem;
+    color: var(--gray-400);
 }
 .avatar {
     width: calc(3rem + 12px);
@@ -17,8 +26,35 @@
 }
 .author {
     display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 .authorInfo {
     display: flex;
     flex-direction: column;
+}
+.authorInfo strong {
+    line-height: 1.6;
+    color: var(--white);
+}
+.authorInfo span {
+    line-height: 1.6;
+    color: var(--gray-400);
+    font-size: 0.85rem;
+}
+.content {
+    line-height: 1.6;
+    color: var(--gray-300);
+    margin-top: 1.5rem;
+}
+.content p {
+    margin-top: 1rem;
+}
+.content a {
+    color: var(--green-200);
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+.content a:hover {
+    color: var(--green-100);
 }
