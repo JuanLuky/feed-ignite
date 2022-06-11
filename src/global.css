@@ -13,6 +13,10 @@
     --green-200:#00875F;
 
 }
+:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--green-200);
+}
 * {
     padding: 0;
     margin: 0;
