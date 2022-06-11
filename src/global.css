@@ -11,7 +11,10 @@
     --red-100:#F75A68;
     --green-100: #00B37E;
     --green-200:#00875F;
-
+}
+:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--green-200);
 }
 :focus {
     outline: transparent;
